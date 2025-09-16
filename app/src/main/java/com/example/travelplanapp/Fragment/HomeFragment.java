@@ -35,6 +35,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class HomeFragment extends Fragment {
+
     private PopularAdapter2 adapter;
     private FragmentHomeBinding binding;
     private Call currentCall = null;
