@@ -3,13 +3,12 @@ package com.example.travelplanapp.Activities;
 import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceFragmentCompat;
 
 import com.example.travelplanapp.R;
-import com.example.travelplanapp.databinding.SettingsActivityBinding;
 
-public class SettingsActivity extends BaseActivity {
-    private SettingsActivityBinding binding;
+public class SettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +17,7 @@ public class SettingsActivity extends BaseActivity {
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
+                    .replace(R.id.settings, new SettingsFragment())
                     .commit();
         }
         ActionBar actionBar = getSupportActionBar();
