@@ -1,0 +1,29 @@
+{
+  "Category": [
+    {
+      "Id": 0,
+      "ImagePath": "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083258/project215/yz3yk2mlslv7maib0ybn.png",
+      "Name": "酒店"
+    },
+    {
+      "Id": 1,
+      "ImagePath": "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083373/project215/epwqylgwskunc8hhkgqb.png",
+      "Name": "景点"
+    },
+    {
+      "Id": 2,
+      "ImagePath": "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083373/project215/j8ptw8s3hmnbfxkxu5ic.png",
+      "Name": "咨询"
+    },
+    {
+      "Id": 3,
+      "ImagePath": "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083260/project215/wr83ondcasfnwzwt84gf.png",
+      "Name": "限时折扣"
+    },
+    {
+      "Id": 4,
+      "ImagePath": "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083268/project215/czbjnclggetupthc3hij.png",
+      "Name": "更多"
+    }
+  ]
+}

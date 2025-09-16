@@ -1,0 +1,240 @@
+{
+  "Popular": [
+    {
+      "id": 1,
+      "address": "巴厘岛, 印度尼西亚",
+      "bed": 3,
+      "dateTour": "2024年7月10日",
+      "description": "努沙·佩尼达(Nusa Penida)是位于巴厘岛心脏地带的迷人岛屿,它充满了自然美、历史意义和充满活力的地方文化。 这个不为人知的天堂拥有惊人的火山景色、纯净的海滩和茂密的森林,每个都为印尼丰富的生物多样性提供了独特的一瞥。\n对于那些寻求冒险的人来说,努沙·佩尼达的崎岖地形和多种生态系统为登山、潜水和在水晶清澈的水域中跳水提供了机会。 岛上古老的寺庙和考古遗址提供了对其丰富历史的洞察力,而传统的巴厘舞蹈表演则展示了岛上独特的文化遗产。Nusa Penida的一些群众活动是什么?\n努沙佩尼达的群众活动包括徒步穿过红树林,探索古老的寺庙,在清澈的水域中俯冲或潜水,以及访问迷人的村庄。\n\n在努沙佩尼达是否有一个值得参观的地方 来观察日落的景象?\n是的,在Nusa Penida日落景景色最美的地方之一是Tanjung Benoa海滩,它为印度洋提供了惊人的日落。\n\nNusa Penida的访客是否有任何独特的经验?\n参观者可以体验传统的巴厘岛舞蹈表演,尝试当地美食,如莱马克鱼(咖喱鱼),并参加文化游览,以更多地了解该岛的历史和传统。\n\n每年访问Nusa Penida的最佳时间是什么时候?\n访问Nusa Penida的最佳时机是10月至4月,当时天气普遍温暖干燥,适合户外活动。",
+      "distance": "200公里",
+      "duration": "1天/1夜",
+      "pic": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083273/project215/cc4nfjsulmeuzlve8nxt.jpg",
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083267/project215/ngeguxt0l2mv4koxjpdc.jpg"
+      ],
+      "price": 600,
+      "score": 4.1,
+      "TourCount": "25人",
+      "title": "努沙佩尼达 巴厘岛 印度尼西亚 巴厘省欢乐一日游",
+      "tourGuideName": "爱德华·克洛尼"
+    },
+    {
+      "id": 2,
+      "address": "夏威夷, 美国",
+      "bed": 2,
+      "dateTour": "2024年6月17日",
+      "description": "夏威夷是太平洋中的度假天堂，以其火山、热带雨林和世界级的冲浪海滩而闻名。这里是放松和探索自然的理想之地。",
+      "distance": "30公里",
+      "duration": "3天/2夜",
+      "pic": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083273/project215/wp2vqlyszi5jrnskugce.jpg"
+      ],
+      "price": 900,
+      "score": 4.5,
+      "TourCount": "30人",
+      "title": "班德岛海滩"
+    },
+    {
+      "id": 3,
+      "address": "龙目岛, 印度尼西亚",
+      "bed": 1,
+      "dateTour": "2024年6月18日",
+      "description": "龙目岛是一个风景如画的岛屿，以其白色沙滩、清澈海水和活跃的火山而闻名。这里是冒险和自然爱好者的完美选择。\n其中，在游人众多的巴厘岛东部，有一座充满原始野性的传奇小岛——科莫多（Komodo Island）。\n它曾是印尼犯人的流放地，流传着“吃人巨兽”的可怕传闻。1921年，一位飞行员在飞过小岛上空时偶然看到了流犯口中的怪兽，人们才真正相信岛上有“吃人巨兽”。紧接着，荷兰科考家只身探险，发现这个爬行怪兽其实是恐龙近亲——巨蜥，并命名为“科莫多龙”（Komodo Dragon）。\n它们是世界上体型最大的蜥蜴，最早生活在380万年前，现在世上仅存的2500多只科莫多龙都生活在这片区域。印尼政府为保护它们，专门成立了“科莫多公园”，包括科莫多岛、巴达尔岛和林恰岛三个岛屿，这里不仅有巨蜥看，附近还有各式各样的绝美潜水点。\n如果去巴厘岛玩，可以专门预留出两三天时间到科莫多去，和世界上仅存于此的远古巨蜥来张此生无憾系列的合影。",
+      "distance": "20公里",
+      "duration": "3天/2夜",
+      "pic": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083277/project215/gyfc6dh416iy6xntsfgj.jpg"
+      ],
+      "price": 800,
+      "score": 4.6,
+      "TourCount": "20人",
+      "title": "科莫多岛"
+    },
+    {
+      "id": 4,
+      "address": "洛杉矶, 美国",
+      "bed": 2,
+      "dateTour": "2024年7月20日",
+      "description": "洛杉矶是美国西海岸的文化和娱乐中心，以好莱坞、阳光明媚的海滩和繁华的都市氛围而闻名。无论是购物、美食还是观光，这里都能满足你。",
+      "distance": "90公里",
+      "duration": "2天/1夜",
+      "pic": [
+        "https://res.cloudinary.com/dkikc5ywq/image/upload/v1734083266/project215/p90k2odd9dlvgmo6kb2u.jpg"
+      ],
+      "price": 750,
+      "score": 4.9,
+      "TourCount": "40人",
+      "title": "克林金海滩"
+    },
+    {
+      "id": 5,
+      "address": "张家界, 湖南, 中国",
+      "bed": 2,
+      "dateTour": "2024年8月5日",
+      "description": "张家界国家森林公园以其奇特的石英砂岩峰林地貌闻名，是《阿凡达》电影中哈利路亚山的灵感来源地。这里拥有绝美的云海、深谷和壮观的天门洞。\n游客可以乘坐世界最长的玻璃索道，挑战惊险的玻璃栈道，或徒步穿越神秘的金鞭溪。\n最佳旅游时间是每年的春秋季，天气舒适，云雾缭绕，景色最为壮观。",
+      "distance": "15公里",
+      "duration": "2天/1夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747323337/zhangjiajie_ql7o2e.jpg"
+      ],
+      "price": 650,
+      "score": 4.7,
+      "TourCount": "28人",
+      "title": "张家界奇峰探秘游",
+      "tourGuideName": "李强"
+    },
+    {
+      "id": 6,
+      "address": "丽江, 云南, 中国",
+      "bed": 3,
+      "dateTour": "2024年7月15日",
+      "description": "丽江古城以其优雅的纳西文化、小桥流水人家的风格吸引无数游客。玉龙雪山、束河古镇、泸沽湖都是不容错过的景点。\n游客可以骑行环湖、参加篝火晚会，或穿民族服饰体验古城生活。\n最佳旅行时间为春秋两季，气候温和宜人。",
+      "distance": "25公里",
+      "duration": "3天/2夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747320612/lijiang_evafox.jpg"
+      ],
+      "price": 720,
+      "score": 4.8,
+      "TourCount": "32人",
+      "title": "纳西风情丽江深度游 丽江, 云南, 中国 3天/2夜",
+      "tourGuideName": "赵芸"
+    },
+    {
+      "id": 7,
+      "address": "九寨沟, 四川, 中国",
+      "bed": 2,
+      "dateTour": "2024年10月1日",
+      "description": "九寨沟被誉为“童话世界”，以其五彩斑斓的湖泊、瀑布和雪山而著称。\n秋季的九寨沟色彩最为斑斓，是摄影爱好者的天堂。景区设有环保观光车，方便游览。\n推荐游览镜海、五花海和诺日朗瀑布。",
+      "distance": "50公里",
+      "duration": "3天/2夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747323863/jiuzaigou_xprswe.jpg"
+      ],
+      "price": 850,
+      "score": 4.9,
+      "TourCount": "40人",
+      "title": "九寨沟彩林瀑布童话之旅 啊哈哈哈哈哈哈啊哈哈哈哈",
+      "tourGuideName": "陈思思"
+    },
+    {
+      "id": 8,
+      "address": "三亚, 海南, 中国",
+      "bed": 1,
+      "dateTour": "2024年11月12日",
+      "description": "三亚被誉为“东方夏威夷”，拥有清澈海水、细腻沙滩和高端度假村，是休闲度假的首选。\n天涯海角、亚龙湾、蜈支洲岛是热门景点。游客还可以参与海上摩托、浮潜等活动。",
+      "distance": "10公里",
+      "duration": "4天/3夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747323337/sanya_iwrbhu.jpg"
+      ],
+      "price": 950,
+      "score": 4.6,
+      "TourCount": "35人",
+      "title": "阳光沙滩三亚悠闲游",
+      "tourGuideName": "王凯"
+    },
+    {
+      "id": 9,
+      "address": "敦煌, 甘肃, 中国",
+      "bed": 2,
+      "dateTour": "2024年9月25日",
+      "description": "敦煌是丝绸之路上的璀璨明珠，拥有莫高窟、鸣沙山和月牙泉等著名景点。\n莫高窟的佛教壁画和雕塑为世界文化瑰宝，鸣沙山上可体验骑骆驼、滑沙等沙漠活动。\n最佳旅行季节是每年5月至10月。",
+      "distance": "35公里",
+      "duration": "3天/2夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747323861/dunkuang_yht5jb.jpg"
+      ],
+      "price": 700,
+      "score": 4.5,
+      "TourCount": "27人",
+      "title": "丝路传奇敦煌文化探秘",
+      "tourGuideName": "杨帆"
+    },
+    {
+      "id": 10,
+      "address": "马尔代夫, 南亚",
+      "bed": 1,
+      "dateTour": "2024年12月2日",
+      "description": "马尔代夫由千余座珊瑚岛组成，是世界著名的蜜月胜地。这里有水上别墅、浮潜天堂和蓝色泻湖，适合情侣或家庭出行。\n游客可以进行水上飞机观景、潜水看珊瑚礁，或在私人岛屿上享受浪漫烛光晚餐。\n最佳旅游时间为11月至次年4月，天气干燥舒适。",
+      "distance": "150公里",
+      "duration": "5天/4夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747323336/maerdaifu_alkyju.jpg"
+      ],
+      "price": 2000,
+      "score": 4.9,
+      "TourCount": "18人",
+      "title": "马尔代夫水上别墅奢华体验",
+      "tourGuideName": "Sarah Ahmed"
+    },
+    {
+      "id": 11,
+      "address": "京都, 日本",
+      "bed": 2,
+      "dateTour": "2024年10月10日",
+      "description": "京都是日本文化的精华所在，拥有金阁寺、清水寺和岚山等著名景点，是传统与现代完美结合的城市。\n秋天枫叶红遍京都，是欣赏自然与古寺结合的最佳时机。\n游客可参与和服体验、抹茶品鉴和艺伎文化之旅。",
+      "distance": "12公里",
+      "duration": "3天/2夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747323336/japan_lemuww.jpg"
+      ],
+      "price": 850,
+      "score": 4.8,
+      "TourCount": "22人",
+      "title": "枫红古都京都文化巡游",
+      "tourGuideName": "中村光"
+    },
+    {
+      "id": 12,
+      "address": "巴黎, 法国",
+      "bed": 2,
+      "dateTour": "2024年9月12日",
+      "description": "巴黎是浪漫与艺术的代名词，拥有埃菲尔铁塔、卢浮宫、巴黎圣母院等地标。这里是购物、美食与文化爱好者的天堂。\n漫步塞纳河畔、登顶圣心大教堂俯瞰城市，都是不可错过的体验。",
+      "distance": "10公里",
+      "duration": "3天/2夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747323861/bali_qrajay.jpg"
+      ],
+      "price": 1100,
+      "score": 4.7,
+      "TourCount": "36人",
+      "title": "浪漫花都巴黎深度游",
+      "tourGuideName": "Julien Lefèvre"
+    },
+    {
+      "id": 13,
+      "address": "开普敦, 南非",
+      "bed": 13,
+      "dateTour": "2024年8月8日",
+      "description": "开普敦以桌山、好望角和海豹岛而著称，是非洲最美的城市之一。这里融合了自然奇观和多元文化。\n游客可登桌山俯瞰城市、到企鹅滩观企鹅，还能在海湾中邂逅鲸鱼与鲨鱼。",
+      "distance": "80公里",
+      "duration": "4天/3夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1747322304/nanfei_hqxpqz.jpg"
+      ],
+      "price": 950,
+      "score": 4.6,
+      "TourCount": "24人",
+      "title": "桌山之巅开普敦生态之旅啊哈哈哈啊",
+      "tourGuideName": "AAAAAAAAA老王小黄"
+    },
+    {
+      "id": 14,
+      "address": "冰岛, 欧洲",
+      "bed": 2,
+      "dateTour": "2024年11月5日",
+      "description": "冰岛是极光、火山与瀑布的国度。这里拥有蓝湖温泉、黄金圈、黑沙滩等奇观，是探险爱好者的天堂。\n秋冬季是观赏北极光的最佳时间，同时还能体验冰川徒步和冰洞探险。",
+      "distance": "100公里",
+      "duration": "5天/4夜",
+      "pic": [
+        "https://res.cloudinary.com/dizdfprop/image/upload/v1746768125/samples/landscapes/architecture-signs.jpg"
+      ],
+      "price": 1800,
+      "score": 4.9,
+      "TourCount": "16人",
+      "title": "极光之旅冰岛自然奇观探险",
+      "tourGuideName": "Erik Hanson"
+    }
+  ]
+}
