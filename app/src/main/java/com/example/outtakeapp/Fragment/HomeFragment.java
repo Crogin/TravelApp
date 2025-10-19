@@ -1,7 +1,6 @@
-package com.example.travelplanapp.Fragment;
+package com.example.outtakeapp.Fragment;
 
 
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,11 +13,11 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.example.travelplanapp.Adapter.CategoryAdapter;
-import com.example.travelplanapp.Adapter.PopularAdapter2;
-import com.example.travelplanapp.Model.CategoryModel;
-import com.example.travelplanapp.Model.ItemModel;
-import com.example.travelplanapp.databinding.FragmentHomeBinding;
+import com.example.outtakeapp.Adapter.CategoryAdapter;
+import com.example.outtakeapp.Adapter.PopularAdapter2;
+import com.example.outtakeapp.Model.CategoryModel;
+import com.example.outtakeapp.Model.ItemModel;
+import com.example.outtakeapp.databinding.FragmentHomeBinding;
 
 import org.json.JSONArray;
 import org.json.JSONException;

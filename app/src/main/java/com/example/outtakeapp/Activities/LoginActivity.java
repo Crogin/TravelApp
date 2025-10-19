@@ -1,9 +1,9 @@
-package com.example.travelplanapp.Activities;
+package com.example.outtakeapp.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import com.example.travelplanapp.databinding.ActivityLoginBinding;
+import com.example.outtakeapp.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends BaseActivity {
     ActivityLoginBinding binging;

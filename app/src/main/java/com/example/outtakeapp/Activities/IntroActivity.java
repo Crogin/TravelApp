@@ -1,10 +1,9 @@
-package com.example.travelplanapp.Activities;
+package com.example.outtakeapp.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
-import com.example.travelplanapp.databinding.ActivityIntroBinding;
+import com.example.outtakeapp.databinding.ActivityIntroBinding;
 
 public class IntroActivity extends BaseActivity {
     /**

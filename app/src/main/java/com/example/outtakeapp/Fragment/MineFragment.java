@@ -1,4 +1,4 @@
-package com.example.travelplanapp.Fragment;
+package com.example.outtakeapp.Fragment;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -17,8 +17,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
-import com.example.travelplanapp.Activities.LoginActivity;
-import com.example.travelplanapp.databinding.FragmentMineBinding;
+import com.example.outtakeapp.Activities.LoginActivity;
+import com.example.outtakeapp.databinding.FragmentMineBinding;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;

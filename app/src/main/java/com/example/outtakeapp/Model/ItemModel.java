@@ -1,4 +1,4 @@
-package com.example.travelplanapp.Model;
+package com.example.outtakeapp.Model;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.travelplanapp.Fragment;
+package com.example.outtakeapp.Fragment;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;

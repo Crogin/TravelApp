@@ -1,4 +1,4 @@
-package com.example.travelplanapp.Model;
+package com.example.outtakeapp.Model;
 
 public class CategoryModel {
     private int id;

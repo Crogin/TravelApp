@@ -1,4 +1,4 @@
-package com.example.travelplanapp.Adapter;
+package com.example.outtakeapp.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -12,10 +12,10 @@ import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.travelplanapp.Activities.PopularDetailActivity;
-import com.example.travelplanapp.Model.ItemModel;
-import com.example.travelplanapp.R;
-import com.example.travelplanapp.databinding.ViewholderPopular2Binding;
+import com.example.outtakeapp.Activities.PopularDetailActivity;
+import com.example.outtakeapp.Model.ItemModel;
+import com.example.outtakeapp.R;
+import com.example.outtakeapp.databinding.ViewholderPopular2Binding;
 
 public class PopularAdapter2 extends ListAdapter<ItemModel, PopularAdapter2.ViewHolder> {
 

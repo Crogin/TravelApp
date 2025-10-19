@@ -1,16 +1,15 @@
-package com.example.travelplanapp.Adapter;
+package com.example.outtakeapp.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.travelplanapp.Model.CategoryModel;
-import com.example.travelplanapp.databinding.ViewholderCategoryBinding;
+import com.example.outtakeapp.Model.CategoryModel;
+import com.example.outtakeapp.databinding.ViewholderCategoryBinding;
 
 import java.util.List;
 

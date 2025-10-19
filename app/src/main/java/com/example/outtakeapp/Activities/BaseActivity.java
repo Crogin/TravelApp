@@ -1,7 +1,6 @@
-package com.example.travelplanapp.Activities;
+package com.example.outtakeapp.Activities;
 
 import android.annotation.SuppressLint;
-import android.content.res.Resources;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;

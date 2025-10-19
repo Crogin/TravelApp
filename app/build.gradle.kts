@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.travelplanapp"
+    namespace = "com.example.outtakeapp"
     compileSdk = 35
 
     defaultConfig {

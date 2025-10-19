@@ -1,13 +1,13 @@
-package com.example.travelplanapp.Activities;
+package com.example.outtakeapp.Activities;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
-import com.example.travelplanapp.Fragment.HomeFragment;
-import com.example.travelplanapp.Fragment.MineFragment;
-import com.example.travelplanapp.R;
-import com.example.travelplanapp.databinding.ActivityMainBinding;
+import com.example.outtakeapp.Fragment.HomeFragment;
+import com.example.outtakeapp.Fragment.MineFragment;
+import com.example.outtakeapp.R;
+import com.example.outtakeapp.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseActivity {
 

@@ -1,9 +1,9 @@
-package com.example.travelplanapp.Activities;
+package com.example.outtakeapp.Activities;
 
 import android.os.Bundle;
 import com.bumptech.glide.Glide;
-import com.example.travelplanapp.Model.ItemModel;
-import com.example.travelplanapp.databinding.ActivityPopularDetailBinding;
+import com.example.outtakeapp.Model.ItemModel;
+import com.example.outtakeapp.databinding.ActivityPopularDetailBinding;
 
 public class PopularDetailActivity extends BaseActivity {
     ActivityPopularDetailBinding binding;
