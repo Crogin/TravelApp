@@ -17,7 +17,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
+import com.example.outtakeapp.Activities.ChatActivity;
 import com.example.outtakeapp.Activities.LoginActivity;
+import com.example.outtakeapp.Activities.ListViewActivity;
+import com.example.outtakeapp.Activities.RecycleViewActivity;
 import com.example.outtakeapp.databinding.FragmentMineBinding;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -88,9 +91,17 @@ public class MineFragment extends Fragment {
         //点击editTv上传头像,在相册获取
         binding.editTv.setOnClickListener(v -> openImagePicker());
 
-        //TODO设置功能点击，未完成
-        View[] aViews = {
-                binding.a1, binding.a2, binding.a3, binding.a4, binding.a5
+        binding.a1.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), ListViewActivity.class));
+        });
+        binding.a2.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), RecycleViewActivity.class));
+        });
+        binding.a3.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), ChatActivity.class));
+
+        });
+        View[] aViews = {binding.a4, binding.a5
         };
         for (View aView : aViews) {
             aView.setOnClickListener(v -> {
