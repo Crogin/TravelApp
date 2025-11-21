@@ -18,6 +18,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Activities.NewsActivty"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NewsContentActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.FragmentActivity"
             android:exported="false" />
         <activity

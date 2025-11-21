@@ -18,8 +18,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.outtakeapp.Activities.ChatActivity;
+import com.example.outtakeapp.Activities.FragmentActivity;
 import com.example.outtakeapp.Activities.LoginActivity;
 import com.example.outtakeapp.Activities.ListViewActivity;
+import com.example.outtakeapp.Activities.NewsActivty;
 import com.example.outtakeapp.Activities.RecycleViewActivity;
 import com.example.outtakeapp.databinding.FragmentMineBinding;
 import java.io.File;
@@ -101,13 +103,13 @@ public class MineFragment extends Fragment {
             startActivity(new Intent(requireContext(), ChatActivity.class));
 
         });
-        View[] aViews = {binding.a4, binding.a5
-        };
-        for (View aView : aViews) {
-            aView.setOnClickListener(v -> {
-                Toast.makeText(requireContext(), "暂未开放功能", Toast.LENGTH_SHORT).show();
-            });
-        }
+        binding.a4.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), FragmentActivity.class));
+
+        });
+        binding.a5.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), NewsActivty.class));
+        });
 
         //退出登录
         binding.a6.setOnClickListener(v -> {
