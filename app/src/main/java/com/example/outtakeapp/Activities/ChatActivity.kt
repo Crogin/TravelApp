@@ -1,17 +1,17 @@
 package com.example.outtakeapp.Activities
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.outtakeapp.Adapter.MessageAdapter
 import com.example.outtakeapp.Model.Message
 import com.example.outtakeapp.R
 
-class ChatActivity : AppCompatActivity() {
+class ChatActivity : BaseActivity() {
     val messageList = ArrayList<Message>()
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "UnsafeImplicitIntentLaunch")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,15 +24,10 @@ class ChatActivity : AppCompatActivity() {
         val adapter = MessageAdapter(messageList)
         recyclerView.adapter = adapter
         send.setOnClickListener(){
-            send->
-            val send = findViewById<android.widget.EditText>(R.id.input_text)
-            if (send.text.isNotEmpty()){
-                val msg = Message(send.text.toString(), Message.TYPE_SENT)
-                messageList.add(msg)
-                adapter.notifyItemInserted(messageList.size-1)// 刷新数据
-                recyclerView.scrollToPosition(messageList.size-1) // 滚动到底部
-                send.setText("")
-            }
+            //发送广播
+            val intent = Intent("com.example.outtakeapp.FORCE_OFFLINE")
+            intent.setPackage(packageName)
+            sendBroadcast(intent)
         }
     }
 

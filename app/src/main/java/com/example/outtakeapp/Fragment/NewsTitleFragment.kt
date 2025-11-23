@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.outtakeapp.Activities.NewsContentActivity
 import com.example.outtakeapp.Model.News
 import com.example.outtakeapp.R
+import com.example.outtakeapp.utils.lettersCount
 
 @Suppress("DEPRECATION")
 class NewsTitleFragment: Fragment() {
@@ -26,8 +27,8 @@ class NewsTitleFragment: Fragment() {
         isTwoPane = activity?.findViewById<View>(R.id.newsTitleFrag) != null
         val layoutManager = LinearLayoutManager(activity)
         val recyclerView = view?.findViewById<View>(R.id.recyclerView) as RecyclerView
-        val adapter = NewsAdapter(getNews())
         recyclerView.layoutManager = layoutManager
+        val adapter = NewsAdapter(getNews())
         recyclerView.adapter = adapter
 
 
@@ -69,16 +70,16 @@ class NewsTitleFragment: Fragment() {
                 val news = newsList[holder.adapterPosition]
                 if (isTwoPane){
                     // 如果是双页模式，则将内容展示在右侧的NewsContentFragment中
-                    val fragment = NewsContentFragment()
+                    val fragmentManager = parent.context as androidx.fragment.app.FragmentActivity
+                    val fragment = fragmentManager.supportFragmentManager.findFragmentById(R.id.newsContentFrag) as NewsContentFragment
                     fragment.reFlash(news.title, news.content)
+                    print(news.title.lettersCount())
                 } else {
                     // 如果是单页模式，则直接启动NewsContentActivity
                     NewsContentActivity.startAty(view.context, news.title, news.content)
                 }
             }
-
-
-            return ViewHolder(view)
+            return holder
         }
 
         override fun onBindViewHolder(holder: NewsAdapter.ViewHolder, position: Int) {

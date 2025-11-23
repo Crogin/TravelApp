@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import com.example.outtakeapp.Fragment.NewsContentFragment
 import com.example.outtakeapp.R
 
 class NewsContentActivity : BaseActivity() {
@@ -15,8 +16,8 @@ class NewsContentActivity : BaseActivity() {
         val title = intent.getStringExtra("title")
         val content = intent.getStringExtra("content")
         if (title != null && content != null){
-            findViewById<TextView>(R.id.title).text = title
-            findViewById<TextView>(R.id.content).text = content
+            val fragment = supportFragmentManager.findFragmentById(R.id.newsContentFrag) as NewsContentFragment
+            fragment.reFlash(title, content)
         }
     }
 

@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
+import com.example.outtakeapp.Activities.BaseActivity;
 import com.example.outtakeapp.Activities.ChatActivity;
 import com.example.outtakeapp.Activities.FragmentActivity;
 import com.example.outtakeapp.Activities.LoginActivity;
@@ -24,6 +25,7 @@ import com.example.outtakeapp.Activities.ListViewActivity;
 import com.example.outtakeapp.Activities.NewsActivty;
 import com.example.outtakeapp.Activities.RecycleViewActivity;
 import com.example.outtakeapp.databinding.FragmentMineBinding;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -113,7 +115,11 @@ public class MineFragment extends Fragment {
 
         //退出登录
         binding.a6.setOnClickListener(v -> {
-            startActivity(new Intent(requireContext(), LoginActivity.class));
+            Intent intent = new Intent("com.example.outtakeapp.FORCE_OFFLINE");
+            intent.setClass(requireContext(), BaseActivity.ForceOfflineReceiver.class);
+            requireContext().sendBroadcast(intent);
+
+//            startActivity(new Intent(requireContext(), LoginActivity.class));
         });
 
         return binding.getRoot();

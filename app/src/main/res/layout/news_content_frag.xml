@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:layout_marginStart="10dp"
         android:id="@+id/contentLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -36,7 +37,7 @@
     </LinearLayout>
 
     <View
-        android:layout_width="1dp"
+        android:layout_width="10dp"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:background="#000" />
