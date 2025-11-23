@@ -32,6 +32,7 @@ class ChatActivity : BaseActivity() {
     }
 
     private fun initData() {
+        val msg0 = Message("小王", Message.TYPE_RECEIVED) //接收
         val msg1 = Message("小王", Message.TYPE_RECEIVED)
         messageList.add(msg1)
         val msg2 = Message("我爱你", Message.TYPE_SENT)
