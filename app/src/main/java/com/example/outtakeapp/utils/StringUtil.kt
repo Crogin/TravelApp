@@ -1,5 +1,7 @@
 package com.example.outtakeapp.utils
 
+import kotlin.random.Random
+
 /**
  * 拓展函数和重载运算符
  * **/
@@ -30,9 +32,23 @@ fun main() {
     println(money3.amount)
     println(money4.amount)
     println("你好".times(3))
+
+    runAble {
+        val other = Random(1000).nextInt()
+        println("这是runAble")
+        if (other > 0){
+            println("other > 0")
+            return@runAble
+        }
+    }
 }
 
 fun String.times(other: Int): String {
     return  repeat(other)
 }
 
+inline fun runAble(crossinline block:() -> Unit){
+    val runAble = Runnable {
+        block()
+    }
+}
