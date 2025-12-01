@@ -5,6 +5,7 @@
     </style>
 
     <style name="Theme.TravelPlanApp" parent="Base.Theme.TravelPlanApp" />
+
     <style name="ShapeAppearanceOverlay.App.circleImageView" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">10dp</item>
@@ -43,6 +44,6 @@
     </style>
 
     <!--    <style name="CustomDialogStyle" parent="Theme.AppCompat.Dialog">-->
-<!--                <item name="android:windowBackground">@android:color/transparent</item>-->
-<!--    </style>-->
+    <!--                <item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--    </style>-->
 </resources>

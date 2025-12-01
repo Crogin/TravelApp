@@ -1,6 +1,7 @@
 package com.example.outtakeapp.Fragment;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,8 +24,14 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 import okhttp3.Call;
@@ -61,6 +68,9 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getContext(), "暂未开发", Toast.LENGTH_SHORT).show();
             }
         });
+
+        String text =  loadText();
+        binding.editTextText.setText(text);
 
         return binding.getRoot();
     }
@@ -194,6 +204,44 @@ public class HomeFragment extends Fragment {
         } catch (IOException | JSONException e) {
             e.printStackTrace();
             binding.progressBarCategory.setVisibility(View.GONE);
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        String inputText = binding.editTextText.getText().toString();
+        saveText(inputText);
+    }
+
+    private void saveText(String inputText) {
+        if (inputText == null || inputText.isEmpty()) return;
+        
+        try (OutputStream output = requireContext().openFileOutput("input.txt", Context.MODE_PRIVATE);
+             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(output))) {
+            writer.write(inputText);
+        } catch (IOException e) {
+            e.printStackTrace();
+            Toast.makeText(getContext(), "保存失败"+e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private String loadText() {
+        try (InputStream input = requireContext().openFileInput("input.txt");
+             BufferedReader reader = new BufferedReader(new InputStreamReader(input))) {
+            StringBuilder builder = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                builder.append(line);
+            }
+            return builder.toString();
+        } catch (FileNotFoundException e) {
+            // 文件不存在是正常情况（首次运行），返回空字符串
+            return "";
+        } catch (IOException e) {
+            e.printStackTrace();
+            Toast.makeText(getContext(), "读取失败", Toast.LENGTH_SHORT).show();
+            return "";
         }
     }
 }
