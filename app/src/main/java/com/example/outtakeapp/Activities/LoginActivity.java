@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.outtakeapp.Activities.testActivities.RunningPermission;
 import com.example.outtakeapp.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends BaseActivity {
@@ -28,6 +29,7 @@ public class LoginActivity extends BaseActivity {
             binging.editText1.setText(preferencesa.getString("account",""));
             binging.editText2.setText(preferencesa.getString("password",""));
         }
+        binging.btnPermissionPage.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, RunningPermission.class)));
 
 
         binging.loginBtn.setOnClickListener(v -> {

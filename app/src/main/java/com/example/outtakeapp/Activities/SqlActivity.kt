@@ -1,18 +1,21 @@
 package com.example.outtakeapp.Activities
 
 import android.annotation.SuppressLint
+import android.content.ComponentName
 import android.content.ContentValues
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.contentValuesOf
 import androidx.core.content.edit
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.example.outtakeapp.databinding.ActivitySqlBinding
 import com.example.outtakeapp.utils.MyDatabaseHelper
 import com.example.outtakeapp.utils.cv0f
 import com.example.outtakeapp.utils.open
 
-class SqlActivity : AppCompatActivity() {
+class SqlActivity : BaseActivity() {
     private lateinit var binding: ActivitySqlBinding
 
     @SuppressLint("Range", "Recycle")
@@ -103,6 +106,10 @@ class SqlActivity : AppCompatActivity() {
             }finally {
                 db.endTransaction()
             }
+        }
+        binding.button8.setOnClickListener {
+            val localIntent = Intent("com.example.outtakeapp.FORCE_OFFLINE")
+            sendBroadcast(localIntent)
         }
     }
 }

@@ -7,6 +7,12 @@
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -19,6 +25,19 @@
         android:theme="@style/Theme.TravelPlanApp"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <provider
+            android:name=".utils.MyContentProvider"
+            android:authorities="com.example.outtakeapp.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.example.outtakeapp.permission.ACCESS_PROVIDER" />
+
+        <activity
+            android:name=".Activities.testActivities.PhoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.testActivities.RunningPermission"
+            android:exported="false" />
         <activity
             android:name=".Activities.SqlActivity"
             android:exported="false"

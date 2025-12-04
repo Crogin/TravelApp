@@ -23,28 +23,25 @@ public class BaseActivity extends AppCompatActivity {
         ActivityCollector.INSTANCE.addActivity(this);
     }
 
-    @SuppressLint({"UnspecifiedRegisterReceiverFlag", "WrongConstant", "InlinedApi"})
+    @SuppressLint("UnspecifiedRegisterReceiverFlag")
     @Override
-    protected void onResume() {
-        super.onResume();
-        //注册广播
+    protected void onStart() {
+        super.onStart();
+        // 注册广播接收器
         IntentFilter filter = new IntentFilter();
         filter.addAction("com.example.outtakeapp.FORCE_OFFLINE");
         receiver = new ForceOfflineReceiver();
-
-        // 确保在所有版本中都指定 RECEIVER_EXPORTED 或 RECEIVER_NOT_EXPORTED
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            // Android 14+ 需要明确指定
-            registerReceiver(receiver, filter, Context.RECEIVER_NOT_EXPORTED);
+            registerReceiver(receiver, filter, RECEIVER_NOT_EXPORTED);
         } else {
-            // Android 13 及以下版本
             registerReceiver(receiver, filter);
         }
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
+    protected void onStop() {
+        super.onStop();
+        // 注销广播接收器
         if (receiver != null) {
             unregisterReceiver(receiver);
             receiver = null;
@@ -61,16 +58,16 @@ public class BaseActivity extends AppCompatActivity {
         @Override
         public void onReceive(Context context, Intent intent) {
             Toast.makeText(context, "强制下线", Toast.LENGTH_SHORT).show();
-                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setTitle("提示")
-                        .setMessage("您已被强制下线")
-                        .setCancelable(false)
-                        .setPositiveButton("确定", (dialog, which) -> {
-                            ActivityCollector.INSTANCE.finishAll();
-                            Intent i = new Intent(context, LoginActivity.class);
-                            context.startActivity(i);
-                        });
-                builder.show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(context);
+            builder.setTitle("提示")
+                    .setMessage("您已被强制下线")
+                    .setCancelable(false)
+                    .setPositiveButton("确定", (dialog, which) -> {
+                        ActivityCollector.INSTANCE.finishAll();
+                        Intent i = new Intent(context, LoginActivity.class);
+                        context.startActivity(i);
+                    });
+            builder.show();
         }
     }
 }

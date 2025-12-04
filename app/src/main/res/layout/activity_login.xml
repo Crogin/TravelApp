@@ -67,6 +67,12 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
+                <Button
+                    android:id="@+id/btnPermissionPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Button" />
+
                 <EditText
                     android:paddingTop="2dp"
                     android:layout_gravity="center_vertical"
@@ -205,13 +211,13 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:id="@+id/imageView24"
+                        android:id="@+id/imgWechat"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         app:srcCompat="@drawable/wechat" />
 
                     <TextView
-                        android:id="@+id/textView281"
+                        android:id="@+id/txtWechat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -227,14 +233,14 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
-                        android:id="@+id/imageView2a4"
+                        android:id="@+id/imgAlipay"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
                         android:layout_gravity="center"
                         app:srcCompat="@drawable/ali" />
 
                     <TextView
-                        android:id="@+id/textView281a"
+                        android:id="@+id/txtAlipay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"

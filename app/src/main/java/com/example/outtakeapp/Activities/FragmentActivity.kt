@@ -13,7 +13,7 @@ import com.example.outtakeapp.Fragment.LeftFragment
 import com.example.outtakeapp.Fragment.RightFragment
 import com.example.outtakeapp.R
 
-class FragmentActivity : AppCompatActivity() {
+class FragmentActivity : BaseActivity() {
     @SuppressLint("MissingInflatedId", "ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
