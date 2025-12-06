@@ -58,6 +58,12 @@
                 android:orientation="vertical"
                 android:paddingHorizontal="25dp">
 
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="声音界面哦" />
+
                 <TextView
                     android:id="@+id/textView1"
                     android:layout_width="match_parent"

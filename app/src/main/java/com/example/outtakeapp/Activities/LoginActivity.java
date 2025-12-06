@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.outtakeapp.Activities.testActivities.MediaActivity;
 import com.example.outtakeapp.Activities.testActivities.RunningPermission;
 import com.example.outtakeapp.databinding.ActivityLoginBinding;
 
@@ -31,6 +32,9 @@ public class LoginActivity extends BaseActivity {
         }
         binging.btnPermissionPage.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, RunningPermission.class)));
 
+        binging.button11.setOnClickListener(
+                v -> startActivity(new Intent(LoginActivity.this, MediaActivity.class))
+        );
 
         binging.loginBtn.setOnClickListener(v -> {
             String admin = binging.editText1.getText().toString();
