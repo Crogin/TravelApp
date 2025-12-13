@@ -12,6 +12,7 @@ import com.example.outtakeapp.Activities.NewsContentActivity
 import com.example.outtakeapp.Model.News
 import com.example.outtakeapp.R
 import com.example.outtakeapp.utils.lettersCount
+import com.example.outtakeapp.utils.startActivity
 
 @Suppress("DEPRECATION")
 class NewsTitleFragment: Fragment() {

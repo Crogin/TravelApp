@@ -56,12 +56,11 @@ class RunningPermission : BaseActivity() {
         /**
          * 获取系统通知服务管理器
          * 判断Android版本是否为8.0(Oreo)及以上
-         * 如果是8.0以上版本，则创建一个名为"normal"的通知渠道，重要级别为默认等级
+         * 如果是8.0以上版本，则创建一个名为"important"的通知渠道，重要级别为高
          * 通过通知管理器注册创建的通知渠道
         */
         val manager = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-//            val channel = NotificationChannel("normal", "Normal", NotificationManager.IMPORTANCE_DEFAULT)
             val channel = NotificationChannel("important", "Important", NotificationManager.IMPORTANCE_HIGH)
             manager.createNotificationChannel(channel)
         }

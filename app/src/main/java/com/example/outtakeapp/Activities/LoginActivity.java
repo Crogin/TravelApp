@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 
 import com.example.outtakeapp.Activities.testActivities.MediaActivity;
 import com.example.outtakeapp.Activities.testActivities.RunningPermission;
+import com.example.outtakeapp.Activities.testActivities.ServiceActivity;
 import com.example.outtakeapp.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends BaseActivity {
@@ -55,6 +56,7 @@ public class LoginActivity extends BaseActivity {
         });
 
         binging.button3.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, SqlActivity.class)));
+        binging.button44.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, ServiceActivity.class)));
     }
 
     @Nullable

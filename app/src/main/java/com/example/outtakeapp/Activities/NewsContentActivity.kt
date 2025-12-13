@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import com.example.outtakeapp.Fragment.NewsContentFragment
 import com.example.outtakeapp.R
+import com.example.outtakeapp.utils.startActivity
 
 class NewsContentActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,11 +24,10 @@ class NewsContentActivity : BaseActivity() {
 
     companion object{
         fun startAty(context: Context, title: String, content : String){
-            val intent = Intent(context, NewsContentActivity::class.java).apply {
+            startActivity<NewsContentActivity>(context){
                 putExtra("title", title)
                 putExtra("content", content)
             }
-            context.startActivity(intent)
         }
     }
 }
