@@ -33,4 +33,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "My Application"
 include(":app")
- 
+include(":kotlintest")
+include(":coroutine-demo")

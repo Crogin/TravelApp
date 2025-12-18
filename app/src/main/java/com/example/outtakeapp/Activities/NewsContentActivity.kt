@@ -24,6 +24,7 @@ class NewsContentActivity : BaseActivity() {
 
     companion object{
         fun startAty(context: Context, title: String, content : String){
+            //泛型实例化，传入参数
             startActivity<NewsContentActivity>(context){
                 putExtra("title", title)
                 putExtra("content", content)

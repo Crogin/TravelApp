@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import com.example.outtakeapp.Activities.testActivities.MediaActivity;
 import com.example.outtakeapp.Activities.testActivities.RunningPermission;
 import com.example.outtakeapp.Activities.testActivities.ServiceActivity;
+import com.example.outtakeapp.Activities.testActivities.WebViewActivity;
 import com.example.outtakeapp.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends BaseActivity {
@@ -36,6 +37,8 @@ public class LoginActivity extends BaseActivity {
         binging.button11.setOnClickListener(
                 v -> startActivity(new Intent(LoginActivity.this, MediaActivity.class))
         );
+
+        binging.button444.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, WebViewActivity.class)));
 
         binging.loginBtn.setOnClickListener(v -> {
             String admin = binging.editText1.getText().toString();
